@@ -4,8 +4,14 @@
   "private": true,
   
   "scripts": {
-  "start": "next-app/package.json"
-},
+    "start": "node server.js",
+    "dev": "nodemon server.js",
+    "build": "webpack --config webpack.config.js",
+    "test": "mocha",
+    "lint": "eslint next-app/*.js",
+    "prestart": "npm install",
+    "poststart": "echo 'Server is running!'"
+  },
   "dependencies": {
     "@types/node": "20.6.0",
     "@types/react": "18.2.21",
