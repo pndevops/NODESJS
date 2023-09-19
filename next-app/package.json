@@ -3,10 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "/next-app",
-    "start": "next start",
-    "lint": "next lint"
+  "start": "node next.config.js",
+  "build": "webpack --config package.json",
+  "test": "mocha"
   },
   "dependencies": {
     "@types/node": "20.6.0",
