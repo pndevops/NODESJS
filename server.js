@@ -1,11 +1,13 @@
-const http = require('http');
-const port = 3000; // Specify your desired port number
+const express = require('express');
+const app = express();
+const port = 3000; // Replace with your desired port
 
-const server = http.createServer((req, res) => {
-  res.writeHead(200, { 'Content-Type': 'text/plain' });
-  res.end('Hello, World!\n');
+// Define a route for the root URL ("/")
+app.get('/', (req, res) => {
+  res.send('Hello, World!');
 });
 
-server.listen(port, () => {
+// Start the server
+app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
 });
