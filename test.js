@@ -3,7 +3,7 @@ const { expect } = require('chai');
 
 describe('Application URL Test', () => {
   it('should return a successful response', async () => {
-    const url = 'http://15.207.71.125:3000'; // Replace with your application URL
+    const url = 'http://localhost:3000'; // Replace with your application URL
 
     try {
       const response = await axios.get(url);
