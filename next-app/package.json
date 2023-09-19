@@ -2,11 +2,10 @@
   "name": "next-app",
   "version": "0.1.0",
   "private": true,
+  
   "scripts": {
-  "start": "node next.config.js",
-  "build": "webpack --config package.json",
-  "test": "mocha"
-  },
+  "start": "node next-app/package.json"
+},
   "dependencies": {
     "@types/node": "20.6.0",
     "@types/react": "18.2.21",
