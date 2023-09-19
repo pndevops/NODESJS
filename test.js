@@ -8,15 +8,13 @@ app.get('/', (req, res) => {
 });
 
 // Start the server
+
+
+const interval = setInterval(() => {    
+  
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
  
 });
-
-const interval = setInterval(() => { 
-  console.log('Running...');    
-    clearInterval(interval); // Stop the interval
-    console.log('Stopped.');
-    process.exit(0); // Terminate the Node.js process with exit code 0
  
-}, 10000); 
+}, 1000); 
