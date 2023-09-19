@@ -4,7 +4,7 @@
   "private": true,
   
   "scripts": {
-  "start": "node next-app/package.json"
+  "start": "next-app/package.json"
 },
   "dependencies": {
     "@types/node": "20.6.0",
