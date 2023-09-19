@@ -12,15 +12,5 @@ app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
 }
 
-// This is just an example to demonstrate the usage of process.exit()
-const interval = setInterval(() => {
-  // Your code here
-  console.log('Running...');
-  
-  // Condition to stop the interval
-  
-    clearInterval(interval); // Stop the interval
-    console.log('Stopped.');
-   // process.exit(0); // Terminate the Node.js process with exit code 0
- 
-}, 1000); // Runs every second (1000 milliseconds)
+
+
