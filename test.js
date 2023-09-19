@@ -6,11 +6,4 @@ app.get('/', (req, res) => {
   res.send('welcome to Node JS project!');
 });
 
-const server = app.listen(port, () => {
-  console.log(`Server is running on port ${port}`);
-});
 
-app.listen(port, () => {
-  console.log(`Server is listening on port ${port}`);
- 
-});
