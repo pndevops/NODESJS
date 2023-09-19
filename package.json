@@ -5,7 +5,7 @@
   
   "scripts": {
     "start": "node test.js",
-    "dev": "nodemon server.js",
+    "dev": "nodemon test.js",
     "build": "webpack --config pages/api/hello.ts",
     "test": "mocha",
     "lint": "eslint next-app/*.js",
